@@ -1,0 +1,18 @@
+{
+  "name": "@example/blog",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "windiDev": "supervisor -w src -e 'node|js|html|astro|svelte' lib/windi.ts",
+    "build": "astro build"
+  },
+  "devDependencies": {
+    "astro": "^0.17.2",
+    "standard": "^16.0.3",
+    "windicss": "^3.1.5"
+  },
+  "dependencies": {
+    "glob": "^7.1.7"
+  }
+}

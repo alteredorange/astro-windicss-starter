@@ -1,0 +1,52 @@
+---
+// Component Imports
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'Example Blog';
+let description = 'The perfect starter for your perfect blog?!';
+let permalink = 'https://example.com/';
+
+// Data Fetching: List all Markdown posts in the repo.
+let allPosts = Astro.fetchContent('./posts/*.md');
+allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+
+// Full Astro Component Syntax:
+// https://github.com/snowpackjs/astro/blob/main/docs/core-concepts/astro-components.md
+---
+<html>
+  <head>
+    <BaseHead title={title} description={description} permalink={permalink} />
+    <link rel="stylesheet" href="/global.css" />
+
+    <style lang="scss">
+    header {
+      height: 50px;
+      width: calc(100% - 30px);
+    }
+    main {
+      height: 100%;
+      background-image: url("https://i.pinimg.com/originals/a1/ad/19/a1ad1972ddb87b768df008023400ff8c.gif")
+    }
+</style>
+  </head>
+
+  <body>
+<header>
+HEader..
+</header>
+<main >
+Content...
+
+</main>
+<footer>
+Footer
+</footer>
+
+ </body>
+</html>
