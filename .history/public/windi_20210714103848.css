@@ -155,23 +155,8 @@ ul {
 .-mt-20 {
   margin-top: -5rem;
 }
-.-mt-10 {
-  margin-top: -2.5rem;
-}
-.max-w-full {
-  max-width: 100%;
-}
-.children\:max-w-full > * {
-  max-width: 100%;
-}
-.max-w-100vw {
-  max-width: 100vw;
-}
 .min-h-100vh {
   min-height: 100vh;
-}
-.overflow-hidden {
-  overflow: hidden;
 }
 .py-5 {
   padding-top: 1.25rem;
@@ -197,10 +182,6 @@ ul {
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-.underline {
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
 }
 .content {
   content: "";
@@ -340,9 +321,6 @@ ul {
   -webkit-animation: bounceInRight;
   animation: bounceInRight;
 }
-.animate-slow {
-  animation-duration: 2000ms;
-}
 @keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -373,6 +351,7 @@ ul {
 }
 .animate-pulse {
   animation-name: pulse;
+  animation-duration: 1s;
 }
 @media (min-width: 768px) {
   .md\:w-8\/12 {

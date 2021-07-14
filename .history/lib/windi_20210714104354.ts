@@ -18,12 +18,10 @@ const getAllFiles = async () => {
 
 function generateStyles (html) {
   // Get windi processor
-  const processor = new Processor({
-    plugins: [Animations]
-  })
+  const processor = new Processor()
 
   // add your plugins
-  // processor.loadPlugin(Animations)
+  processor.loadPlugin(Animations)
 
   // Parse all classes and put into one line to simplify operations
   const htmlClasses = new HTMLParser(html)

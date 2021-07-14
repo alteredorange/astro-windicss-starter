@@ -1,6 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@windicss/animations': ^1.0.8
+  '@windicss/plugin-animations': ^1.0.9
   astro: ^0.17.2
   concurrently: ^6.2.0
   glob: ^7.1.7
@@ -14,6 +16,8 @@ dependencies:
   onchange: 7.1.0
 
 devDependencies:
+  '@windicss/animations': 1.0.8
+  '@windicss/plugin-animations': 1.0.9
   astro: 0.17.2
   standard: 16.0.3
   windicss: 3.1.5
@@ -516,6 +520,15 @@ packages:
 
   /@vue/shared/3.1.4:
     resolution: {integrity: sha512-6O45kZAmkLvzGLToBxEz4lR2W6kXohCtebV2UxjH9GXjd8X9AhEn68FN9eNanFtWNzvgw1hqd6HkPRVQalqf7Q==}
+    dev: true
+
+  /@windicss/animations/1.0.8:
+    resolution: {integrity: sha512-2edYQdTVh3koQYmZQqXU2hPIvAJRjkqOP/FpzCQv3U0bbtEgmLk3UeHYHzo9jSL5obV12pEhJuAHIzKo6cdRyw==}
+    deprecated: rename package
+    dev: true
+
+  /@windicss/plugin-animations/1.0.9:
+    resolution: {integrity: sha512-9WsQsPzLurkwV5zaMCwmylxfSHlQ1pPmzud4ysvMkMBRB7obub9ESmqlHefcCjEhatz/ZROi1U1XOuOPPUO1nA==}
     dev: true
 
   /abbrev/1.1.1:

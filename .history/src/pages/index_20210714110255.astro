@@ -38,8 +38,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishD
     </style>
   </head>
 
-<!-- overflow-hidden to prevent animations from showing offscreen -->
-  <body class="flex flex-col min-h-100vh max-w-100vw overflow-hidden">
+  <body class="flex flex-col min-h-100vh">
     <header>
 <nav class="py-5">
   <div class="flex mx-auto text-lg w-11/12 justify-between md:w-8/12">
@@ -55,16 +54,15 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishD
 </nav>
 </header>
     <main class="flex flex-1">
-<div class="w-full">
-  <div class="flex font-extrabold h-full max-w-full -mt-20 children:w-full children:max-w-full children:text-center children:my-auto">
-    <div class="animate-bounce-in-left animate-slow text-red-400 text-4xl">
+<div class="w-full content">
+  <div class="flex font-extrabold h-full -mt-20 animate-bounce-in-down animate-duration-infinite children:w-full children:text-center children:my-auto">
+    <div class="animate-bounce-in-left text-red-400 text-4xl content">
       ASTRO
     </div>
-    <div class="animate-bounce-in-right animate-slow text-blue-400 text-4xl">
+    <div class="animate-bounce-in-right text-blue-400 text-4xl content">
       WINDICSS
     </div>
   </div>
-  <div class="-mt-10 text-center text-xl underline">Edit the "index.astro" page to see changes show up here!</div>
 </div>
 
     </main>

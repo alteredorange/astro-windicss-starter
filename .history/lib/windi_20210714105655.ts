@@ -19,7 +19,7 @@ const getAllFiles = async () => {
 function generateStyles (html) {
   // Get windi processor
   const processor = new Processor({
-    plugins: [Animations]
+    plugins: [Animations()]
   })
 
   // add your plugins

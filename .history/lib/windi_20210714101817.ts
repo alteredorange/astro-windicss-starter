@@ -1,6 +1,15 @@
 const { Processor } = require('windicss/lib')
 const { HTMLParser } = require('windicss/utils/parser')
-const Animations = require('@windicss/plugin-animations')({})
+const Animations = require('@windicss/animations')({
+  settings: {
+    animatedSpeed: 1000,
+    heartBeatSpeed: 1000,
+    hingeSpeed: 2000,
+    bounceInSpeed: 750,
+    bounceOutSpeed: 750,
+    animationDelaySpeed: 1000
+  }
+})
 const fs = require('fs')
 const glob = require('glob')
 
@@ -18,12 +27,10 @@ const getAllFiles = async () => {
 
 function generateStyles (html) {
   // Get windi processor
-  const processor = new Processor({
-    plugins: [Animations]
-  })
+  const processor = new Processor()
 
   // add your plugins
-  // processor.loadPlugin(Animations)
+  processor.loadPlugin(Animations)
 
   // Parse all classes and put into one line to simplify operations
   const htmlClasses = new HTMLParser(html)
